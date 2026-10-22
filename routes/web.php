@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MahasiswaController;
 
+use App\Http\Controllers\DashboardController;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -43,4 +45,5 @@ Route::put('/matakuliah/{kode}', [MatakuliahController::class, 'update']);
 Route::delete('/matakuliah/{kode}', [MatakuliahController::class, 'destroy']);
 
 Route::get('/home', [HomeController::class, 'index']);
-//coba coba
+
+Route::get('/dashboard', [DashboardController::class, 'index']) ->name('dashboard');
