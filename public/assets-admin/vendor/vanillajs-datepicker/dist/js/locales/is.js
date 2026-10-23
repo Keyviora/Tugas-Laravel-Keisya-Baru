@@ -1,3 +1,4 @@
+
 /**
  * Icelandic translation for bootstrap-datepicker
  * Hinrik Örn Sigurðsson <hinrik.sig@gmail.com>
