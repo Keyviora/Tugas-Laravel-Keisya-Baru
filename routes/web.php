@@ -49,3 +49,7 @@ Route::get('/home', [HomeController::class, 'index']);
 Route::get('/dashboard', [DashboardController::class, 'index']) ->name('dashboard');
 
 Route::resource('/pelanggan', PelangganController::class);
+
+use App\Http\Controllers\UserController;
+
+Route::resource('user', UserController::class);
